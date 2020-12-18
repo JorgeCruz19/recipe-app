@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Recipe App</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="input-group">
+					<input type="search" class="searchInput" id="searchInput" placeholder="Search a recipe..." />
+					<span
+						><button class="search" id="search">
+							<svg width="16px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+							</svg></button
+					></span>
+				</div>
+			</header>
+			<div class="fav-container">
+				<h2>Favorite Meals</h2>
+				<ul></ul>
+			</div>
+			<div class="meals"></div>
+			<div id="meal-popup" class="popup-container hidden">
+				<div class="popup">
+					<div class="meal-info"></div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js" type="module"></script>
+	</body>
+</html>
